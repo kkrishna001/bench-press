@@ -2,6 +2,7 @@ package io.redgreen.benchpress.counter
 
 import android.content.Context
 import android.content.Intent
+import android.widget.Toast
 import com.spotify.mobius.Next
 import io.reactivex.ObservableTransformer
 import io.redgreen.benchpress.R
@@ -41,12 +42,12 @@ class CounterActivity : BaseActivity<ModelCounter, CounterEvent, CounterEffect>(
 
   override fun effectHandler(): ObservableTransformer<CounterEffect, CounterEvent> {
     return CounterEffectHandler().createEffectHandler(
-      interactor = this@CounterActivity
+      interact = this@CounterActivity
     )
   }
   
   override fun showError() {
-    //show toast
+    Toast.makeText(this, "hello error", Toast.LENGTH_SHORT).show()
   }
 }
 

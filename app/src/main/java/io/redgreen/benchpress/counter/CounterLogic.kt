@@ -14,7 +14,7 @@ object CounterLogic : Update<ModelCounter, CounterEvent, CounterEffect> {
             next(model.increment())
         } else if (event is DecrementCounterEvent) {
             if (model.counter <= 0) {
-                next(
+                dispatch(
                     setOf(ShowErrorEffect as CounterEffect)
                 )
             } else {
