@@ -19,7 +19,7 @@ class DeferredEventSource<E> : EventSource<E> {
                         eventConsumer.accept(event)
                     }
                 } catch (e: Throwable) {
-                    // TODO(rj) 8/Jan/19 - Log this exception.
+
                 }
             }
         }
