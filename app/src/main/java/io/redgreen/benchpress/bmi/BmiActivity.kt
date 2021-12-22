@@ -93,4 +93,5 @@ class BmiActivity : BaseActivity<BmiModel, BmiEvent, BmiEffect>(), Interactor3 {
     override fun showUnitChanged() =
         Toast.makeText(this, "${measurementSystemSwitch.text}", Toast.LENGTH_SHORT).show()
 
+
 }

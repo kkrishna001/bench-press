@@ -67,4 +67,5 @@ data class BmiModel(val height: Float, val weight: Float, val SIUnit: SIUnits) :
 
     fun changeUnit(SIUnit: SIUnits): BmiModel =
         copy(SIUnit = SIUnit)
+
 }

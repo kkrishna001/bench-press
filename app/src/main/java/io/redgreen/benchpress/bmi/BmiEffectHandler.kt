@@ -16,6 +16,5 @@ class BmiEffectHandler {
                 }, AndroidSchedulers.mainThread()
             )
             .build()
-
     }
 }
